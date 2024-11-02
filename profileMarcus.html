@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="profileMarcus.css" />
+    <title>ProfileMarcus</title>
+  </head>
+  <body>
+    <nav class="nav">
+      <a href="/index.html"> Sistema de Gestión de Turnos Médicos</a>
+    </nav>
+
+    <main class="main">
+      <aside class="aside">
+        <div class="title-dashboard">
+          <p>Seleccione la Especialidad Médica</p>
+        </div>
+        <ul class="ul">
+          <a href="/Catalogo_Profesionales.html">Clínica General</a>
+          <a href="/Catalogo_Profesionales.html">Gastroenterología</a>
+          <a href="/Catalogo_Profesionales.html">Cardiología</a>
+          <a href="/Catalogo_Profesionales.html">Pediatría</a>
+          <a href="/Catalogo_Profesionales.html">Oncología</a>
+        </ul>
+        <a href="/contactanos.html" class="btn-contact">Contáctanos</a>
+      </aside>
+      <section class="section-profile">
+        <div class="card-profile">
+          <div class="container-img">
+            <img
+              src="./imagenes/usman-yousaf-MP9W9DtdoBI-unsplash.jpg"
+              alt="imagen-doctor"
+            />
+          </div>
+          <form action="">
+            <ul class="form-profile">
+              <li>Marcus</li>
+              <li>Yabrum</li>
+              <li>Gastroenterología</li>
+              <li>Miercoles-Martes-Jueves</li>
+              <li>6:30am - 18:00pm</li>
+            </ul>
+          </form>
+        </div>
+        <form class="form-paciente">
+          <h2>Datos del Paciente</h2>
+          <div class="form-group">
+            <label for="apellido">Apellido</label>
+            <input
+              type="text"
+              id="apellido"
+              name="apellido"
+              placeholder="Apellido"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="nombre">Nombre</label>
+            <input
+              type="text"
+              id="nombre"
+              name="nombre"
+              placeholder="Nombre"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="dni">DNI</label>
+            <input type="text" id="dni" name="dni" placeholder="DNI" required />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Correo Electrónico</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Correo Electrónico"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="fecha-turno">Fecha de Turno</label>
+            <input type="date" id="fecha-turno" name="fecha-turno" required />
+          </div>
+
+          <div class="form-group">
+            <label for="horario-turno">Horario de Turno</label>
+            <input
+              type="time"
+              id="horario-turno"
+              name="horario-turno"
+              required
+            />
+          </div>
+
+          <div class="form-buttons">
+            <button type="submit" class="btn-submit">Registrar Turno</button>
+            <button type="button" class="btn-listado">Volver al Listado</button>
+          </div>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,149 @@
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-family: 'Lato', sans-serif;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+ol, ul {
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    background-color: #004d7a;
+    color: #fff;
+    text-align: center;
+}
+
+.nav p {
+    font-size: 2.4rem;
+    font-weight: bold;
+    margin: 0.5rem 0;
+}
+
+
+.main {
+    display: flex;
+}
+
+.aside {
+    background-color: #f5f5f5;
+    width: 25rem;
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 2rem;
+}
+
+.title-dashboard {
+    text-align: center;
+}
+
+.title-dashboard p {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+}
+.ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.ul a {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #008080;
+    color: white;
+    font-size: 1.5rem;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.ul a:hover {
+    background-color: #005555;
+}
+
+.btn-contact {
+    text-align: center;
+    margin-top: 2.5rem;
+    padding: 1rem;
+    font-size: 1.6rem;
+    background-color: #033c35;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-contact:hover {
+    background-color: #004d40;
+}
+
+.section {
+    flex: 1;
+    position: relative;
+    background-image: url('/imagenes/Image1.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.text-section {
+    background: rgba(24, 25, 25, 0.7);
+    padding: 2rem 3rem;
+    border-radius: 8px;
+    text-align: center;
+    color: #fff;
+    max-width: 80%;
+    opacity: 0; 
+    transform: translateY(20px); 
+    animation: fadeInUp 1.8s ease-out forwards; 
+    animation-delay: 1.8s; 
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.text-section h2 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    line-height: 1.2;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
